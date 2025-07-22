@@ -259,3 +259,57 @@ $ ls -la
 This shows all files, including hidden ones, in a detailed long format.
 
 > The order of flags (`-la` vs `-al`) doesn't matter; both will work the same.
+
+
+## Additional `ls` Flags
+
+### 1. `ls -R` — **Recursively List Directory Contents**
+
+This flag tells `ls` to list **all subdirectories and their contents** as well, not just the current directory.
+
+Example:
+
+```bash
+$ ls -R
+```
+
+If your current directory contains folders like `Documents`, `Downloads`, and inside those are more folders/files, `ls -R` will list everything, including those nested inside subdirectories.
+
+
+### 2. `ls -r` — **Reverse Order While Sorting**
+
+This flag reverses the **default sort order**. Normally, `ls` lists in ascending alphabetical order. With `-r`, it lists in **descending** order.
+
+Example:
+
+```bash
+$ ls -r
+```
+
+Useful when combined with other flags like `-t` or `-l` to reverse the order of the output.
+
+
+### 3. `ls -t` — **Sort by Modification Time (Newest First)**
+
+This flag sorts files based on the **last modification time**, showing the **most recently modified** files and directories at the top.
+
+Example:
+
+```bash
+$ ls -lt
+```
+
+This is helpful for finding the latest changed files in a directory.
+
+
+### Combining Flags
+
+Like other `ls` options, you can combine these for more powerful output.
+
+Examples:
+
+```bash
+$ ls -lrt      # long format, reverse order, sorted by time
+$ ls -lR       # long format, recursive listing
+$ ls -ltrh     # long format, sorted by time, reverse order, and human-readable sizes
+```
