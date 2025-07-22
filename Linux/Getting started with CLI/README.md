@@ -84,8 +84,6 @@ $ whoami -> tells you your desktop name
 
 Here is the updated and properly structured continuation of your `README.md`, integrating the `pwd` section into your current style and format:
 
----
-
 ## pwd - Print Working Directory
 
 In Linux, everything is treated as a file, and all files are organized into a **hierarchical directory structure**. This structure starts from a single root directory, represented by `/`.
