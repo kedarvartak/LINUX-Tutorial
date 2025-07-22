@@ -148,3 +148,68 @@ While inside `less`, you can use the following keys to navigate:
 $ less /var/log/syslog
 ```
 
+## Command History
+
+The shell keeps a record of previously executed commands. You can view and reuse these commands, which is especially helpful for repeating or editing past commands without retyping them.
+
+### View Command History
+
+```bash
+$ history
+```
+
+This displays a list of previously run commands, each with a unique line number.
+
+### Reuse Previous Commands
+
+| Shortcut  | Description                                           |
+| --------- | ----------------------------------------------------- |
+| `↑` / `↓` | Scroll through previously used commands               |
+| `!!`      | Run the last command again                            |
+| `!n`      | Run the command at history line number `n`            |
+| `!string` | Run the most recent command that starts with `string` |
+
+**Example:**
+
+```bash
+$ cat file1
+$ !!
+# Runs: cat file1
+```
+
+## Clearing the Terminal
+
+To clean up your terminal screen and remove clutter:
+
+```bash
+$ clear
+```
+
+This command clears all visible output and returns you to a clean prompt.
+
+## Autocomplete with Tab
+
+The shell provides autocomplete functionality to speed up typing and reduce errors.
+
+### How it works:
+
+* Start typing a **command**, **filename**, or **directory**.
+* Press the `Tab` key to autocomplete the word.
+
+**Example:**
+
+If you type:
+
+```bash
+$ chr
+```
+
+and press `Tab`, the shell may autocomplete to:
+
+```bash
+$ chrome
+```
+
+(as long as no other commands begin with `chr`).
+
+If multiple matches exist, pressing `Tab` twice will list all possible completions.
