@@ -137,3 +137,54 @@ $ pwd
 /home/pete/Movies
 ```
 The output tells you where exactly you stand within the system
+
+Here is the structured version of the `cd - Change Directory` section in line with your current `README.md` style:
+
+---
+
+## cd - Change Directory
+
+The `cd` command is used to **navigate between directories** in the Linux filesystem. Understanding how paths work is essential to use this command effectively.
+
+There are two ways to specify a path:
+
+### Absolute Path
+
+An **absolute path** starts from the **root directory**, represented by `/`. It specifies the complete location of a directory in the filesystem.
+
+Example:
+
+```
+/home/pete/Desktop
+```
+
+This path starts at the root and moves down through `home`, then `pete`, and finally to the `Desktop` directory.
+
+### Relative Path
+
+A **relative path** is based on your **current location** in the filesystem. You don’t need to start from the root. If you’re currently in `/home/pete/Documents` and want to navigate to a folder named `taxes` inside it, you can simply run:
+
+```bash
+$ cd taxes
+```
+
+This avoids the need to type the full path `/home/pete/Documents/taxes`.
+
+### Useful `cd` Shortcuts and Flags
+
+* `.` refers to the **current directory** (no movement).
+* `..` moves to the **parent directory** (one level up).
+* `~` takes you to your **home directory** (e.g., `/home/pete`).
+* `-` takes you to the **previous directory** you were in.
+
+Examples:
+
+```bash
+$ cd .      # Stay in the current directory
+
+$ cd ..     # Move one level up
+
+$ cd ~      # Go to home directory
+
+$ cd -      # Switch to previous directory
+```
