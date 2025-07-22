@@ -1,5 +1,5 @@
 
-# touch Command: Creating Files and Updating Timestamps
+# Touch Command: Creating Files and Updating Timestamps
 
 ## Table of Contents
 
@@ -57,3 +57,30 @@ $ ls -l README.md
 ```
 
 As you can see, the file's **modification time** has been updated.
+
+## `file` – Identify File Type
+
+In Linux, filenames do not need to reflect their actual content type. You can create a file named `funny.gif` that isn't really a GIF image.
+
+To determine what kind of file something actually is, use the `file` command.
+
+### Example:
+
+```bash
+$ file banana.jpeg
+banana.jpeg: ASCII text
+```
+
+This tells you that `banana.jpeg` is just a plain text file, not an image.
+
+### Why it's useful:
+
+* Identify incorrectly labeled or misleading file types
+* Debug file-related issues
+* Check contents without needing to open the file
+
+### Index Entry
+
+```markdown
+- `file`: Identify the actual type of a file regardless of its extension
+```
