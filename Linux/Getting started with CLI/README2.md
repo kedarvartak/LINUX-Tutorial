@@ -7,6 +7,7 @@
 * [Creating Files with touch](#creating-files-with-touch)
 * [Updating Timestamps](#updating-timestamps)
 * [Example: Comparing Timestamps](#example-comparing-timestamps)
+* [File](#file--identify-file-type)
 
 ## Introduction to touch
 
@@ -79,8 +80,3 @@ This tells you that `banana.jpeg` is just a plain text file, not an image.
 * Debug file-related issues
 * Check contents without needing to open the file
 
-### Index Entry
-
-```markdown
-- `file`: Identify the actual type of a file regardless of its extension
-```
