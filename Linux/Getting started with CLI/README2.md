@@ -41,7 +41,6 @@ This is useful for:
 * Marking files as recently modified
 * Triggering build tools or automation tasks based on file changes
 
----
 
 ## Example: Comparing Timestamps
 
@@ -87,7 +86,6 @@ This tells you that `funny.gif` is actually a text file.
 * Helps debug file-related issues
 * Verifies file contents without opening them
 
-
 ## Displaying File Contents with `cat`
 
 The `cat` command (short for "concatenate") is used to:
@@ -107,4 +105,46 @@ This will print the contents of both `dogfile` and `birdfile` in sequence to the
 
 * Ideal for viewing small or short files
 * Not suitable for paging through large files — for that, use `less` or `more`
+
+Here’s a clean and professional version of your section on the `less` command, rewritten for clarity and style:
+
+## Viewing Files with `less`
+
+When working with large text files in Linux, the `less` command is a more efficient option than `cat`. It displays file contents one page at a time, allowing easy navigation through long outputs.
+
+### Why use `less`?
+
+* Efficient for viewing large files
+* Does not load the entire file into memory
+* Allows scrolling, searching, and navigation
+
+### Basic Usage
+
+```bash
+$ less filename.txt
+```
+
+This opens `filename.txt` in a scrollable view.
+
+### Navigation Controls
+
+While inside `less`, you can use the following keys to navigate:
+
+| Key                   | Action                          |
+| --------------------- | ------------------------------- |
+| `q`                   | Quit and return to the shell    |
+| `↑`, `↓`              | Scroll up/down by line          |
+| `Page Up`/`Page Down` | Scroll up/down by page          |
+| `g`                   | Go to the beginning of the file |
+| `G`                   | Go to the end of the file       |
+| `/search_term`        | Search forward for text         |
+| `n`                   | Go to the next search match     |
+| `N`                   | Go to the previous search match |
+| `h`                   | Display help within `less`      |
+
+### Example
+
+```bash
+$ less /var/log/syslog
+```
 
