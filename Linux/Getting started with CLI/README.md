@@ -140,8 +140,6 @@ The output tells you where exactly you stand within the system
 
 Here is the structured version of the `cd - Change Directory` section in line with your current `README.md` style:
 
----
-
 ## cd - Change Directory
 
 The `cd` command is used to **navigate between directories** in the Linux filesystem. Understanding how paths work is essential to use this command effectively.
