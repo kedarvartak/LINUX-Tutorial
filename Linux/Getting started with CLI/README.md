@@ -184,3 +184,78 @@ $ cd ~      # Go to home directory
 
 $ cd -      # Switch to previous directory
 ```
+
+Here is your `ls - List Directory` section, rewritten in the same clean and structured format as the rest of your `README.md`:
+
+
+## ls - List Directory
+
+The `ls` command is used to **list the contents of a directory**. By default, it lists the files and directories in your **current location**, but you can also specify a different path.
+
+Examples:
+
+```bash
+$ ls
+$ ls /home/pete
+```
+
+This will show the files and directories in the specified location.
+
+
+### Hidden Files
+
+In Linux, any file or directory that starts with a `.` is considered **hidden**. These are not shown by default with the `ls` command.
+
+To see **all files**, including hidden ones, use the `-a` flag (stands for "all"):
+
+```bash
+$ ls -a
+```
+
+
+### Long Listing Format
+
+The `-l` flag (stands for "long") shows a more **detailed view** of each file, including:
+
+* File permissions
+* Number of links
+* Owner name
+* Owner group
+* File size
+* Last modified timestamp
+* File or directory name
+
+Example:
+
+```bash
+$ ls -l
+```
+
+Sample output:
+
+```
+pete@icebox:~$ ls -l
+
+total 80
+drwxr-x--- 7 pete penguingroup 4096 Nov 20 16:37 Desktop
+drwxr-x--- 2 pete penguingroup 4096 Oct 19 10:46 Documents
+drwxr-x--- 4 pete penguingroup 4096 Nov 20 09:30 Downloads
+drwxr-x--- 2 pete penguingroup 4096 Oct  7 13:13 Music
+drwxr-x--- 2 pete penguingroup 4096 Sep 21 14:02 Pictures
+drwxr-x--- 2 pete penguingroup 4096 Jul 27 12:41 Public
+drwxr-x--- 2 pete penguingroup 4096 Jul 27 12:41 Templates
+drwxr-x--- 2 pete penguingroup 4096 Jul 27 12:41 Videos
+```
+
+
+### Combining Flags
+
+Commands in Linux often accept **multiple flags** to combine functionalities. You can combine `-l` and `-a` like this:
+
+```bash
+$ ls -la
+```
+
+This shows all files, including hidden ones, in a detailed long format.
+
+> The order of flags (`-la` vs `-al`) doesn't matter; both will work the same.
