@@ -24,7 +24,7 @@ During this time other efforts such as BSD, MINIX, etc were developed to be UNIX
 Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel.
 
 ## What is GNU?
-GNU is an operating system that is free software—that is, it respects users' freedom. The name "GNU" is a recursive acronym for "GNU's Not Unix." "GNU" is pronounced g'noo, as one syllable, like saying "grew" but replacing the r with n.
+GNU is an operating system that is free software , that is, it respects users' freedom. The name "GNU" is a recursive acronym for "GNU's Not Unix." "GNU" is pronounced g'noo, as one syllable, like saying "grew" but replacing the r with n.
 
 The program in a Unix-like system that allocates machine resources and talks to the hardware is called the "kernel." GNU is typically used with a kernel called Linux. This combination is the GNU/Linux operating system. GNU/Linux is used by millions, though many call it "Linux" by mistake.
 
