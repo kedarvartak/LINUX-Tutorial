@@ -8,6 +8,7 @@
 * [The Bash Shell](#the-bash-shell)
 * [Understanding the Shell Prompt](#understanding-the-shell-prompt)
 * [Running Your First Command](#running-your-first-command)
+* [pwd - Print Working Directory](#pwd---print-working-directory)
 
 ## Introduction
 
@@ -33,7 +34,7 @@ Other common shell programs include ->
 * `ksh` (Korn Shell)
 * `zsh` (Z Shell)
 
-## Understanding the Shell Prompt
+## Understanding the Shell Prompt 
 
 When you open a terminal, you're greeted with a **shell prompt**, which looks something like this:
 
@@ -56,7 +57,7 @@ Here’s what each part means:
 
 **Note:** You don’t type the `$` symbol — it’s just a prompt indicating that the shell is ready to receive a command.
 
-## Running Your First Command
+## Running Your First Command - Echo , date, whoami
 
 One of the simplest commands in the shell is `echo`. It prints the text you provide as an argument.
 
@@ -74,3 +75,65 @@ Hello World
 
 This verifies that the shell is working and accepting commands correctly.
 
+$ date -> tells you the exact date and time
+on the basis of what? suppose i have a remote desktop in a US Timezone, what would be the output then?
+
+- It uses the systems local timezone setting. This timezone is usually set during the system installation or can be configured later using system tools or configuration files.
+
+$ whoami -> tells you your desktop name
+
+Here is the updated and properly structured continuation of your `README.md`, integrating the `pwd` section into your current style and format:
+
+---
+
+## pwd - Print Working Directory
+
+In Linux, everything is treated as a file, and all files are organized into a **hierarchical directory structure**. This structure starts from a single root directory, represented by `/`.
+
+Here’s a simplified example of the Linux file system:
+
+```
+/
+
+|-- bin
+
+|   |-- file1
+
+|   |-- file2
+
+|-- etc
+
+|   |-- file3
+
+|   `-- directory1
+
+|       |-- file4
+
+|       `-- file5
+
+|-- home
+
+|-- var
+```
+
+Each file or folder in this tree can be accessed by its **path**, which traces its location starting from the root (`/`). For instance, if you have a folder named `home`, with a subfolder `pete`, and inside that, a folder `Movies`, the complete path to the `Movies` directory would be:
+
+```
+/home/pete/Movies
+```
+
+To **know where you currently are** in this directory tree, you can use the `pwd` command.
+
+```bash
+$ pwd
+```
+
+This stands for **print working directory**, and it displays the absolute path of your current location in the filesystem.
+
+Example:
+
+```bash
+$ pwd
+/home/pete/Movies
+```
+The output tells you where exactly you stand within the system
